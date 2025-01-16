@@ -1,6 +1,6 @@
 blueprint:
-  name: Tradfri E1743 Switch to Light via zigbee2mqtt
-  description: "Updated to Z2M v2. Controls a light with a given TRADFRI on/off switch. \n\nShort Button press will toggle light for both Buttons (helpfull in darkness) \n\n Mode set to restart is mandatory for stop after long press to work."
+  name: Tradfri E1743 Switch to Dimmer via zigbee2mqtt
+  description: "Updated to Z2M v2. Controls a dimmer with a given TRADFRI on/off switch. \n\nShort Button press will toggle light for both Buttons (helpfull in darkness) \n\n Mode set to restart is mandatory for stop after long press to work."
   domain: automation
   input:
     source_switch_e1743_action:
@@ -14,11 +14,11 @@ blueprint:
             manufacturer: IKEA
             model: TRADFRI on/off switch
     target_light:
-      name: Target Light
-      description: the light you want to control.
+      name: Target Dimmer
+      description: the dimmer you want to control.
       selector:
         target:
-alias: Tradfri E1743 Switch to Light via z2m-v2
+alias: Tradfri E1743 Switch to Dimmer via z2m-v2
 description: ""
 trigger:
 - domain: mqtt
